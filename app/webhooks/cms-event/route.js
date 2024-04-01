@@ -3,6 +3,7 @@ import { CACHE_TAG_PROJECTS } from "../../../lib/projects";
 
 export async function POST(request) {
     const payload = await request.json();
+    console.log("revalidated");
     if (payload.model === 'project'){
         revalidateTag(CACHE_TAG_PROJECTS);
     }
