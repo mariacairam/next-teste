@@ -13,12 +13,13 @@ module.exports = {
         },
       ],
     },
-    rewrites: async () => {
+    async redirects() {
       return [
         {
           source: '/strapi-admin',
           destination: 'https://teste-cms-strapi-2-production.up.railway.app/admin',
+          permanent: true,
         },
-      ];
-    }
+      ]
+    },
   }; 
