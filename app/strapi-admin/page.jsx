@@ -1,10 +1,5 @@
-import { useRouter } from 'next/navigation/router'
- 
-export default function Page() {
-    const router = useRouter();
-    useEffect(() => {
-        router.replace('https://teste-cms-strapi-2-production.up.railway.app/admin');
-      }, []);
-    
-      return (<div>Redirecting...</div>);
+export default function strapiPage(){
+    return(
+        <div>Redirecting</div>
+    );
 }

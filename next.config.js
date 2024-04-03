@@ -13,12 +13,15 @@ module.exports = {
         },
       ],
     },
-    /*async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/',
-          permanent: true,
-        },]
-      }*/
+      async rewrites() {
+        return {
+          beforeFiles: [
+            {
+              source: '/some-page',
+              destination: '/somewhere-else',
+              has: [{ type: 'query', key: 'overrideMe' }],
+            },
+          ]
+        }
+      }
   }; 
