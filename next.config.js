@@ -13,4 +13,12 @@ module.exports = {
         },
       ],
     },
+    async rewrites() {
+      return [
+        {
+          source: '/strapi-admin',
+          destination: 'https://teste-cms-strapi-2-production.up.railway.app/admin',
+        },
+      ]
+    }
   }; 
