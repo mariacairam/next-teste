@@ -13,7 +13,7 @@ module.exports = {
         },
       ],
     },
-    async rewrites() {
+    async redirect() {
       return [
         {
           source: '/strapi-admin',
