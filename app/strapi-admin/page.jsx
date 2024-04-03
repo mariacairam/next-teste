@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
-function MyComponent() {
+export default function strapiPage() {
   const router = useRouter();
 
   useEffect(() => {
