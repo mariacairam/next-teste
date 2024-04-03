@@ -13,15 +13,12 @@ module.exports = {
         },
       ],
     },
-      async rewrites() {
-        return {
-          afterFiles: [
-            {
-              source: '/some-page',
-              destination: 'https://teste-cms-strapi-2-production.up.railway.app/admin',
-              has: [{ type: 'query', key: 'overrideMe' }],
-            },
-          ]
-        }
-      }
+    rewrites: async () => {
+      return [
+        {
+          source: '/strapi-admin',
+          destination: 'https://teste-cms-strapi-2-production.up.railway.app/admin',
+        },
+      ];
+    }
   }; 
