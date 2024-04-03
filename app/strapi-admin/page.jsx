@@ -7,7 +7,7 @@ export default function strapiPage() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace('https://teste-cms-strapi-2-production.up.railway.app/admin');
+    router.replace('https://strapi.suplab.site/admin');
   }, []);
 
   return <div>Redirecting...</div>;
