@@ -14,11 +14,13 @@ module.exports = {
       ],
     },
     async redirect() {
-      return [
+      return {
+        beforeFiles: [
         {
           source: '/strapi-admin',
           destination: 'https://teste-cms-strapi-2-production.up.railway.app/admin',
         },
       ]
     }
+  }
   }; 
