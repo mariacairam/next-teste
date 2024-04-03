@@ -15,7 +15,7 @@ module.exports = {
     },
       async rewrites() {
         return {
-          beforeFiles: [
+          afterFiles: [
             {
               source: '/some-page',
               destination: 'https://teste-cms-strapi-2-production.up.railway.app/admin',
