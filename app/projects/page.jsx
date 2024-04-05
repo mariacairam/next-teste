@@ -14,7 +14,7 @@ export default async function ProjectsPage(){
         <ul className="flex fle-row flex-wrap gap-3">
             {
                 projects.map((project, index) => (
-                    <li key={project.slug} className="bg-white border rounded shadow w-80 hover:shadow-xl">
+                    <li key={project.slug} className="bg-white/25 rounded shadow w-80 hover:shadow-xl">
                 <Link href={`/projects/${project.slug}`}>
                     <Image src={project.image} alt="" priority={index === 0} 
                         width="320" height="120" className="rounded-t">
