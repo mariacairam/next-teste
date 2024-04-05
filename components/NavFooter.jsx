@@ -4,18 +4,18 @@ export function NavFooter(){
     return(
         <>
         <nav>
-            <ul className="flex flex-col gap-2 text-left">
+            <ul className="flex flex-col gap-2 text-left items-end">
                 <li>
                 <Link href='/projects'>PROJECTS</Link>
                 </li>
                 <li>
-                <Link href='/'>PUBLICATIONS</Link>
+                <Link href='/publications'>PUBLICATIONS</Link>
                 </li>
                 <li>
-                <Link href='/'>ABOUT</Link>
+                <Link href='/about'>ABOUT</Link>
                 </li>
                 <li>
-                <Link href='/'>NEWS</Link>
+                <Link href='/news'>NEWS</Link>
                 </li>
                 <li>
                 <Link href='/contact'>CONTACT</Link>

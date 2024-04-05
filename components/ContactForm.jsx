@@ -29,7 +29,7 @@ export function ContactForm(){
                 <input type="text" name="email" placeholder="Email" className="bg-black px-2 py-1 border w-full"/>
             </div>
             <div className="w-full">
-                <textarea type="text" name="message" placeholder="Message..." className="bg-black px-2 py-1 border w-full"/>
+                <textarea type="text" name="message" placeholder="Message..." className="h-24 resize-none bg-black px-2 py-1 border w-full"/>
             </div>
             <button type="submit" disabled={state}
                 className="bg-white text-black px-2 py-1 rounded-full w-24">

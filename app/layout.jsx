@@ -10,7 +10,7 @@ export default function RootLayout({ children }){
         <html lan="en">
             <body className=" bg-black flex flex-col items-center
              py-2 px-20 min-h-screen text-white">
-                <header className="w-full mt-3">
+                <header className="w-full mt-3 grid">
                     <NavBar></NavBar>
                 </header> 
                 <main className="w-5/6">
