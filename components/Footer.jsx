@@ -5,8 +5,8 @@ export function Footer(){
     return (
         <>
             <footer className="mt-auto flex flex-row justify-between
-                text-center items-end text-xs h-32 w-5/6 pb-8">
-                <div className="flex flex-row gap-36 items-end">
+                text-center items-end text-3xs lg:text-2xs sh-32 w-full md:w-5/6 pb-8">
+                <div className="flex flex-row gap-6 lg:gap-12 xl:gap-36 items-end">
                     <div className="pb-4"><NavFooter/></div>
                     <div className="pb-4">
                         <p>@2024 X-TOPIA ALL RIGHTS RESERVED</p>
@@ -17,7 +17,7 @@ export function Footer(){
                     </div>
                 </div>
                 <div className="flex flex-row justify-content-end">
-                    <Image src="/images/xtopia.png" alt="" width="240" height="180"></Image>
+                    <Image src="/images/xtopia.png" alt="" width="200" height="150" className="w-28 h-auto sm:w-52 sm:h-auto"></Image>
                 </div>
                 </footer>
         </>
