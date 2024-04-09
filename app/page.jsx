@@ -1,10 +1,13 @@
 import Heading from "../components/Heading";
+import P5jsContainer from "@/components/p5Canvas";
 
 export default function HomePage(){
     return(
         <>
                 <Heading>X-TOPIA</Heading>
-
+                <div className="min-h-12">
+                 <P5jsContainer/>
+                </div>
                 <p className="pb-3">X-Topia is an award-winning design-research 
                 practice that explores the intersection of architecture and urbanism
                  with technology and the public, social and cultural realm. It was
