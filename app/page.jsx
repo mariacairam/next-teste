@@ -5,10 +5,10 @@ export default function HomePage(){
     return(
         <>
                 <Heading>X-TOPIA</Heading>
-                <div className="min-h-12">
+                <div className="min-h-48">
                  <P5jsContainer/>
                 </div>
-                <p className="pb-3">X-Topia is an award-winning design-research 
+                <p className="pb-3 w-full mb-12">X-Topia is an award-winning design-research 
                 practice that explores the intersection of architecture and urbanism
                  with technology and the public, social and cultural realm. It was
                   funded in 2008 by Marcella Del Signore, an architect, urbanist, 

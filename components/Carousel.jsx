@@ -21,14 +21,14 @@ export default function Carousel({images}){
     console.log(urls);
 
     return (
-        <div className="flex flex-row justify-center">
-          <button onClick={prevSlide}>
+        <div className=" grid grid-cols-12 gap-1 col-start-1 col-end-13 justify-center">
+          <button onClick={prevSlide} className="grid-start-1">
             <ChevronLeftIcon className="h-12 w-12"></ChevronLeftIcon>
           </button>
-          <div className="relative w-3/4 h-96 rounded">
-            <Image src={urls[currentIndex]} alt={`Slide ${currentIndex}`} fill ={true} className="absolute w-full h-auto object-cover rounded"/>
+          <div className="relative w-full h-96 rounded grid-start-2 grid-end-12">
+            <Image src={urls[currentIndex]} alt={`Slide ${currentIndex}`} fill ={true} className="absolute w-full h-96 object-cover rounded"/>
           </div>
-          <button onClick={nextSlide}>
+          <button onClick={nextSlide} className="grid-start-12 grid-end-13">
             <ChevronRightIcon className="h-12 w-12"></ChevronRightIcon>
           </button>
         </div>

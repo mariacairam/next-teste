@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function NavBar(){
     return(
-        <nav className="w-5/6 lg:w-1/2 justify-self-end">
+        <nav className="w-full">
         <ul className="grid grid-cols-5 justify-items-stretch mb-4">
         <li className="text-center">
                 <Link href='/' className="italic hover:font-bold">

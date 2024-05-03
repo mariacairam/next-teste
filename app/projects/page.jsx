@@ -11,12 +11,12 @@ export default async function ProjectsPage(){
         <Heading>
             Projects
         </Heading>
-        <ul className="flex fle-row flex-wrap gap-3">
+        <ul className="flex flex-row flex-wrap gap-3">
             {
                 projects.map((project, index) => (
                     <li key={project.slug} className="bg-white/25 rounded shadow w-80 hover:shadow-xl">
                 <Link href={`/projects/${project.slug}`}>
-                    <Image src={project.image} alt="" priority={index === 0} 
+                    <Image src={project.header} alt="" priority={index === 0} 
                         width="320" height="120" className="rounded-t">
                     </Image>
                     <h2 className="font-semibold py-1 text-center">

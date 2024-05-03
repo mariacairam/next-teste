@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { p5Sketch } from '@/lib/canvas';
+import { p5Sketch } from '@/lib/sketch';
 
 export default function P5jsContainer() {
   
@@ -30,10 +30,10 @@ export default function P5jsContainer() {
   return ( 
     <>
       <div ref={parentRef} className="flex justify-center items-center w-full">
-        {mounted && Sketch && sketch && (
+        {mounted && sketch && (
           <Sketch setup={sketch.setup} draw={sketch.draw} windowResized = {sketch.windowResized} />
       )}
       </div>
     </>
   );
-}
+} 
