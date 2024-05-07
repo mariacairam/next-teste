@@ -10,14 +10,14 @@ export default function RootLayout({ children }){
         <html lan="en">
             <body className=" bg-black flex flex-col items-center
              min-h-screen text-white">
-                <div className="fixed z-10 w-full grid grid-cols-12 gap-1 sm:gap-5">
-                    <header className="z-10 relative mt-6 col-start-7 col-end-12">
-                        <NavBar></NavBar>
-                    </header>
+                <div className="w-full grid grid-cols-12 gap-1 sm:gap-5">
                 </div>
                 <div className="absolute w-full grid grid-cols-12 gap-1 sm:gap-5">
-                    <div className="z-0 flex flex-col gap-12 absolute w-full">
+                    <div className="flex flex-col gap-12 absolute w-full">
                         <div>
+                        <header className="relative mt-6 col-start-7 col-end-12">
+                        <NavBar></NavBar>
+                        </header>
                             <main className="h-full grid grid-cols-12 gap-1 sm:gap-5">
                                 {children}
                             </main>

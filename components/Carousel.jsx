@@ -1,4 +1,5 @@
 'use client';
+
 import Image from "next/image";
 import { useState } from "react";
 import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/20/solid'
@@ -21,15 +22,19 @@ export default function Carousel({images}){
     console.log(urls);
 
     return (
-        <div className=" grid grid-cols-12 gap-1 col-start-1 col-end-13 justify-center">
-          <button onClick={prevSlide} className="grid-start-1">
-            <ChevronLeftIcon className="h-12 w-12"></ChevronLeftIcon>
-          </button>
-          <div className="relative w-full h-96 rounded grid-start-2 grid-end-12">
-            <Image src={urls[currentIndex]} alt={`Slide ${currentIndex}`} fill ={true} className="absolute w-full h-96 object-cover rounded"/>
+        <div className="grid grid-cols-12 gap-5 w-full justify-start">
+          <button onClick={prevSlide} className="col-start-1 col-end-2 w-full h-full">
+          <div className="relative w-full h-full object-cover">
+            <Image src={urls[(currentIndex - 1 +images.length) % images.length]} alt={`Slide ${(currentIndex - 1 +images.length) % images.length}`} fill ={true} className="absolute aspect-video h-full object-cover opacity-50"/>
           </div>
-          <button onClick={nextSlide} className="grid-start-12 grid-end-13">
-            <ChevronRightIcon className="h-12 w-12"></ChevronRightIcon>
+          </button>
+          <div className="relative aspect-video w-full col-start-2 col-end-12">
+            <Image src={urls[currentIndex]} alt={`Slide ${currentIndex}`} fill ={true} className="absolute w-full h-auto object-cover"/>
+          </div>
+          <button onClick={nextSlide} className="col-start-12 col-end-13 w-full h-full">
+          <div className="relative w-full h-full object-cover">
+            <Image src={urls[(currentIndex + 1) % images.length]} alt={`Slide ${(currentIndex + 1) % images.length}`} fill ={true} className="absolute aspect-video h-full object-cover opacity-50"/>
+          </div>
           </button>
         </div>
       );

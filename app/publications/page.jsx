@@ -1,4 +1,5 @@
 import { GridResearch } from "@/components/GridResearch";
+import PublicationsButton from "@/components/PublicationsButton";
 import { getBooks, getResearches } from "@/lib/publications";
 import Image from "next/image";
 
@@ -10,11 +11,8 @@ export default async function publicationsPage() {
     <>
       <div className="flex flex-col gap-2 md:gap-5 col-start-2 col-end-12 mt-32">
         <div className="text-2xl md:text-4xl mb-0 md:mb-2">Publications</div>
-        <div className="grid border-neutral-500 grid-cols-10 gap-1 md:gap-5 text-base md:text-2xl border-y h-10 md:h-14 mt-0 md:mt-2 mb-4 md:mb-0">
-          <button className="text-neutral-500 col-span-2 md:col-span-1 text-left">Books</button>
-          <button className="text-neutral-500 col-span-3 md:col-span-2 text-left">Research</button>
-        </div>
-        <div id="books" className="hidden flex-col gap-5">
+        <PublicationsButton></PublicationsButton>
+        <div id="books" className="flex flex-col gap-5">
           <div className="md:flex md:flex-row gap-5 text-base md:text-2xl hidden">
             <p className="text-neutral-500">Books</p>
           </div>
@@ -42,7 +40,7 @@ export default async function publicationsPage() {
           </div>
         </div>
 
-        <div id="researches" className="flex flex-col gap-5">
+        <div id="researches" className="hidden flex-col gap-5">
           <div className="md:flex md:flex-row gap-5 text-base md:text-2xl hidden">
             <p className="text-neutral-500">Research</p>
           </div>

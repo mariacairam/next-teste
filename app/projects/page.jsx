@@ -16,7 +16,7 @@ export default async function ProjectsPage(){
                 projects.map((project, index) => (
                     <li key={project.slug} className="bg-white/25 rounded shadow w-80 hover:shadow-xl">
                 <Link href={`/projects/${project.slug}`}>
-                    <Image src={project.header} alt="" priority={index === 0} 
+                    <Image src={project.images} alt="" priority={index === 0} 
                         width="320" height="120" className="rounded-t">
                     </Image>
                     <h2 className="font-semibold py-1 text-center">
